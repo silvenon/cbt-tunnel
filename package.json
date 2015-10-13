@@ -1,7 +1,7 @@
 {
   "name": "cbt-tunnel",
   "version": "0.0.0",
-  "description": "My posh module",
+  "description": "Create a Local Connection for CrossBrowserTesting app",
   "license": "MIT",
   "repository": "silvenon/cbt-tunnel",
   "author": {
@@ -13,7 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && mocha"
+    "postinstall": "node lib/install.js",
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -21,15 +22,24 @@
   "keywords": [
     ""
   ],
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "download": "^4.2.1",
+    "download-progress": "0.0.1",
+    "download-status": "^2.2.1",
+    "pinkie-promise": "^1.0.0",
+    "which": "^1.2.0"
+  },
   "devDependencies": {
-    "mocha": "^2.2.5",
+    "ava": "^0.2.0",
     "xo": "^0.7.1"
   },
   "xo": {
     "envs": [
-      "node",
-      "mocha"
+      "node"
+    ],
+    "ignore": [
+      "test.js"
     ]
   }
 }
