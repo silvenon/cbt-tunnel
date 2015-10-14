@@ -1,7 +1,7 @@
 {
   "name": "cbt-tunnel",
   "version": "0.0.0",
-  "description": "Create a Local Connection for CrossBrowserTesting app",
+  "description": "Create a Local Connection for the CrossBrowserTesting app",
   "license": "MIT",
   "repository": "silvenon/cbt-tunnel",
   "author": {
