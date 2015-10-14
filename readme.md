@@ -45,7 +45,9 @@ cbtTunnel()
   });
 ```
 
-You can find out what your authentication key is by logging into CrossBrowserTesting, clicking "Enable Local Connection" in the navigation bar and choosing "via Command Line".
+You can find out what your authentication key is by logging into CrossBrowserTesting, clicking "Account" in the navigation bar and choosing "Account" from the dropdown menu.
+
+<img src="images/authkey.png" width="983" height="170">
 
 
 ## API
