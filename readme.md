@@ -47,7 +47,7 @@ cbtTunnel()
 
 You can find out what your authentication key is by logging into CrossBrowserTesting, clicking "Account" in the navigation bar and choosing "Account" from the dropdown menu.
 
-<img src="images/authkey.png" width="983" height="170">
+<img src="images/authkey.png" width="983">
 
 
 ## API
