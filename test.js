@@ -8,6 +8,11 @@ test('should download the executable', (t) => {
 	t.end();
 });
 
-test('should reject if there is no auth key', function* (t) {
-	t.throws(yield cbtTunnel(), Error);
+test('should reject if there is no auth key', async (t) => {
+	try {
+		await cbtTunnel();
+		t.fail();
+	} catch(err) {
+		t.pass();
+	}
 });
