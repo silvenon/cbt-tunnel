@@ -1,18 +1,18 @@
 import test from 'ava';
-import cbtTunnel from './';
+import cbtTunnel from './dist';
 import path from 'path';
+import Promise from 'pinkie-promise';
+import pify from 'pify';
 import fs from 'fs';
 
+const promiseFs = pify.all(fs, Promise);
+
 test('should download the executable', (t) => {
-	t.true(fs.existsSync(path.join(__dirname, 'bin', 'cbttunnel.jar')));
-	t.end();
+	t.plan(1);
+	t.doesNotThrow(promiseFs.access(path.join(__dirname, 'bin', 'cbttunnel.jar')));
 });
 
-test('should reject if there is no auth key', async (t) => {
-	try {
-		await cbtTunnel();
-		t.fail();
-	} catch(err) {
-		t.pass();
-	}
+test('should throw if there is no auth key', (t) => {
+	t.plan(1);
+	t.throws(cbtTunnel());
 });
