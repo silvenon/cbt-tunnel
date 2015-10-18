@@ -13,9 +13,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "postinstall": "npm run prepublish && node dist/install.js",
     "test": "xo && npm run prepublish && ava",
-    "prepublish": "babel lib --out-dir dist",
-    "postinstall": "node dist/install.js"
+    "prepublish": "babel lib --out-dir dist"
   },
   "main": "dist/index.js",
   "files": [
