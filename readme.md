@@ -6,6 +6,13 @@
 [2]: https://github.com/vvo/selenium-standalone
 
 
+## Deprecated!
+
+CrossBrowserTesting released their own node module for opening a tunnel, [cbt_tunnels][0], which makes this hacky wrapper obsolete.
+
+[0]: https://github.com/crossbrowsertesting/cbt-tunnel-nodejs
+
+
 ## Install
 
 ```
