@@ -1,14 +1,13 @@
-# CrossBrowserTesting Tunnel [![Build Status](https://travis-ci.org/silvenon/cbt-tunnel.svg?branch=master)](https://travis-ci.org/silvenon/cbt-tunnel)
+# CrossBrowserTesting Tunnel ![obsolete](https://img.shields.io/badge/status-obsolete-red.svg) [![Build Status](https://travis-ci.org/silvenon/cbt-tunnel.svg?branch=master)](https://travis-ci.org/silvenon/cbt-tunnel)
 
-> Create a [Local Connection][1] for the CrossBrowserTesting app. This is a wrapper around `cbttunnel.jar`, it returns a promise so you can actually know when the connection has been established. The project is inspired by [selenium-standalone][2].
+**Obsolete**: CrossBrowserTesting released their own node module for opening a tunnel, [cbt_tunnels][0], which makes this hacky wrapper obsolete.
+
+---
+
+Create a [Local Connection][1] for the CrossBrowserTesting app. This is a wrapper around `cbttunnel.jar`, it returns a promise so you can actually know when the connection has been established. The project is inspired by [selenium-standalone][2].
 
 [1]: http://crossbrowsertesting.com/faq/how-create-local-connection-command-line
 [2]: https://github.com/vvo/selenium-standalone
-
-
-## Deprecated!
-
-CrossBrowserTesting released their own node module for opening a tunnel, [cbt_tunnels][0], which makes this hacky wrapper obsolete.
 
 [0]: https://github.com/crossbrowsertesting/cbt-tunnel-nodejs
 
