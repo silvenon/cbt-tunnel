@@ -1,4 +1,4 @@
-# CrossBrowserTesting Tunnel ![obsolete](https://img.shields.io/badge/status-obsolete-red.svg) [![Build Status](https://travis-ci.org/silvenon/cbt-tunnel.svg?branch=master)](https://travis-ci.org/silvenon/cbt-tunnel)
+# CrossBrowserTesting Tunnel ![obsolete](https://img.shields.io/badge/status-obsolete-lightgrey.svg) [![Build Status](https://travis-ci.org/silvenon/cbt-tunnel.svg?branch=master)](https://travis-ci.org/silvenon/cbt-tunnel)
 
 **Obsolete**: CrossBrowserTesting released their own node module for opening a tunnel, [cbt_tunnels][0], which makes this hacky wrapper obsolete.
 
